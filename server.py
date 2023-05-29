@@ -9,7 +9,7 @@ from models import Edificacao
 from geoalchemy2.functions import ST_AsGeoJSON
 
 #engine = create_engine("postgresql://postgres:postgres@localhost/postgis_33_sample", echo=True)
-engine = create_engine("postgresql://postgres:postgres@172.17.0.2/postgres", echo=True)
+engine = create_engine("postgresql://postgres:postgres@172.17.0.3/postgres", echo=True)
 app = Sanic(__name__)
 
 @app.route("/edificacoes", methods=["GET"])
